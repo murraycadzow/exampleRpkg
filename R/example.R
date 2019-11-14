@@ -12,7 +12,7 @@ return_three <- function() {
 #' Multiply by three
 #' Multiplies a given number by three
 #'
-#' @param n
+#' @param n a number
 #'
 #' @return number
 #' @export
@@ -28,7 +28,7 @@ multiply_three <- function(n) {
 #' @param x a number to be added.
 #' @param y another number
 #'
-#' @return
+#' @return number
 #' @export
 #'
 #' @examples add_numbers(3, 4)
@@ -36,4 +36,23 @@ add_numbers <- function(x, y) {
   x + y
 }
 
+#' Bigger than 10
+#'
+#' @param n a number
+#'
+#' @return logical
+#' @export
+#'
+#' @examples bigger_than_10(n = 11)
+bigger_than_10 <- function(n) {
+  if(!is.numeric(n)){
+    stop("n must be numeric")
+  }
+
+  if (n > 10) {
+    return(TRUE)
+  } else {
+    return(FALSE)
+  }
+}
 

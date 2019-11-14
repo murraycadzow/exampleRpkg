@@ -12,7 +12,7 @@ add_numbers(x, y)
 \item{y}{another number}
 }
 \value{
-
+number
 }
 \description{
 Add numbers

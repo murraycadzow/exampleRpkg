@@ -8,7 +8,7 @@ Multiplies a given number by three}
 multiply_three(n)
 }
 \arguments{
-\item{n}{}
+\item{n}{a number}
 }
 \value{
 number
